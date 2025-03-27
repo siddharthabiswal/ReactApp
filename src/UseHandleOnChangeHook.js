@@ -4,7 +4,7 @@ import { useState } from "react";
  const [formValue, updateFormValue] = useState(initialFormState);
 
 function UseHandleOnChangeHook(e) {
-    console.log('callled')
+    console.log('callled');
     const name = e.target.name;
     const value = e.target.value;
    // updateFormValue({...formValue,[name]:value})
