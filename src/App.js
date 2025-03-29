@@ -44,6 +44,8 @@ import ToDoList from './ToDoList';
 
 
 
+
+
 import Parent from '../src/DataFromChildToParent/Parent';
 import ParentRerenderDemo from './ComponentRerenderDemos/ParentRerenderDemo';
 import ContextConsumerPage from './UseContextFiles/ContextConsumer';
@@ -52,6 +54,8 @@ import ReactFormComponent from './FormValidations/ReactForm';
 import ReferencHook from './ReferenceHook/ReferenceHook';
 import FormValidationReact from './FormValidationReact';
 import BasicFormValidation from './BasicFormValidation';
+import UserForm from './UserForm';
+import InputForm from './InputForm';
 
 
 
@@ -100,7 +104,8 @@ return(
         </StateContextProvider>
       <Routes>
        
-     <Route path='/' element={<BasicFormValidation/>}> </Route>
+     <Route path='/' element={<InputForm/>}> </Route>
+     <Route path='/UserForm' element={<UserForm/>}> </Route>
         <Route path="/PageTwo" element={<PageTwo />}>  </Route>
         
         <Route path="/Review" element={<ReviewForm />}>  </Route>
